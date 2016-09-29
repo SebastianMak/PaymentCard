@@ -1,0 +1,17 @@
+html, body{
+  height: 100%;
+  margin: 0 auto;
+}
+.container{
+  border: 2px solid blue;
+  height: 100%;
+}
+.valign{
+  width: 80%;
+  border: 2px solid blue;
+  margin: 0 auto;
+  text-align: left;
+}
+.select-dropdown li img{
+  width: auto;
+}
