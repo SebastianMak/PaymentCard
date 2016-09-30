@@ -15,10 +15,6 @@ $("form").submit(function(event) {
     } else {
         $firstName.addClass('valid');
     }
-
-
-
-
     event.preventDefault();
 
 });
