@@ -1,17 +1,54 @@
 html, body{
-  height: 100%;
   margin: 0 auto;
+  background-color: #fcfcfc
 }
-.container{
-  border: 2px solid blue;
-  height: 100%;
+.color{
+  background-color: #009687;
 }
-.valign{
-  width: 80%;
-  border: 2px solid blue;
-  margin: 0 auto;
-  text-align: left;
+.select-dropdown li img {
+    width: auto;
 }
-.select-dropdown li img{
-  width: auto;
+
+.right-border {
+    border-left: 1px solid #009687
+}
+
+.row .card-type {
+    padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .right-border {
+        border: none;
+    }
+}
+
+.slash {
+  margin-top: 14px;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+.collapse-margin {
+      margin-bottom: 0;
+}
+h1{
+  font-size: 40px
+}
+h2{
+  font-size: 30px;
+}
+.custom-error,
+.custom-succes{
+  display: none;
+  margin-top: -20px;
+  color: #f44336;
+}
+.custom-succes{
+  color: #4caf50
+}
+.invalid + .validation-messages .custom-error {
+  display: block;
+}
+.valid + .validation-messages .custom-succes{
+  display: block;
 }

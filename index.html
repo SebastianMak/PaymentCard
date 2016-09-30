@@ -1,46 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <link href="src/css/fonts.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="src/css/custom.css"  media="screen,projection"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="src/css/custom.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-  </head>
-  <body>
-    <div class="container valign-wrapper row">
-      <div class="valign center col s11">
-      <form class="col s12" action="index.html" method="post">
-        <h5>User Info</h5>
-        <div class="input-field col s12 m6 l6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-        <div class="input-field col s12 m6 l6">
-          <input id="last_name" class="validate" type="text" value="">
-          <label for="last_name">Last Name</label>
-        </div>
-        <h5>Card Details</h5>
-        <div class="input-field col s12 m6 l6">
-          <input id="cardholder" class="validate" type="text" value="">
-          <label for="cardholder">Cardholder's Name</label>
-        </div>
-        <div class="input-field col s12 m6 l6 card-type">
-          <select class="icons">
-            <option value="" disabled selected>Card type</option>
-            <option value="" data-icon="images/maestro.png" class="right">Maestro</option>
-            <option value="" data-icon="images/visa.png" class="right">Visa</option>
-            <option value="" data-icon="images/paypa.png" class="right">PayPal</option>
-            <option value="" data-icon="images/mastercard.png" class="right">Master Card</option>
-          </select>
-          <label>Images in select</label>
-        </div>
-      </form>
-  </div>
+</head>
 
+<body>
+  <nav class="color">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Payment Card</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container valign-wrapper">
+        <form method="post" action="" class="row">
+            <div class="valign card col s12">
+              <span class="card-title"><h1>Payment Card</h1></span>
+                <div class="card-content row">
+                    <div class="col s12 m12 l6">
+                        <h2>User Info</h2>
+                        <div class="input-field col s12">
+                            <input id="first_name" type="text" class="validate" name="first_name"/>
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
+                            <label for="first_name" >First Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="last_name" type="text" class="validate" />
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email_name" type="text" class="validate" />
+                            <label for="email_name">Email adress</label>
+                        </div>
+
+                    </div>
+                    <div class="col s12 m12 l6 right-border">
+                        <h2>Card Details</h2>
+                        <div class="input-field col s12">
+                            <input id="cardholder_name" type="text" class="validate">
+                            <label for="cardholder_name">Cardholder's Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select class="icons">
+                              <option value="" disabled selected>Select your card</option>
+                              <option value="" data-icon="images/maestro.png" class="right">Maestro</option>
+                              <option value="" data-icon="images/visa.png" class="right">Visa</option>
+                              <option value="" data-icon="images/paypa.png" class="right">PayPal</option>
+                              <option value="" data-icon="images/mastercard.png" class="right">Master Card</option>
+                            </select>
+                            <label>Card type</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="cardNumber_name" type="text" class="validate">
+                            <label for="cardNumber_name">Card Number</label>
+                        </div>
+                        <div class="col s12 card-type">
+                            <div class="col s12 m8 card-type">
+                                <div class="input-field col s5">
+                                    <select>
+                                      <option value="" disabled selected>MM</option>
+                                      <option value="January">01</option>
+                                      <option value="February">02</option>
+                                      <option value="March">03</option>
+                                      <option value="April">04</option>
+                                      <option value="May">05</option>
+                                      <option value="June">06</option>
+                                      <option value="May">07</option>
+                                      <option value="August">08</option>
+                                      <option value="September">09</option>
+                                      <option value="October">10</option>
+                                      <option value="Noveber">11</option>
+                                      <option value="December">12</option>
+                                    </select>
+                                    <label>Expiration date:</label>
+                                </div>
+                                <div class="col s2 center slash">
+                                  /
+                                </div>
+                                <div class="input-field col s5 card-type">
+                                    <select>
+                                      <option value="" disabled selected>YYY</option>
+                                      <option value="2016">2016</option>
+                                      <option value="2017">2017</option>
+                                      <option value="2018">2018</option>
+                                      <option value="2019">2019</option>
+                                      <option value="2020">2020</option>
+                                    </select>
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input id="cardNumber_name" type="text" class="validate">
+                                <label for="cardNumber_name">CCV code</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action row collapse-margin">
+                    <div class="col s12 m6 l6 btns">
+                        <input name="group1" type="checkbox" id="test1" />
+                        <label for="test1">Subscribe to our newsletter</label>
+                    </div>
+                    <div class="buttons-display col s12 m12 l6">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Reset
+                              <i class="material-icons right"></i>
+                            </button>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                              <i class="material-icons right">send</i>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <script type="text/javascript" src="vendor/jquery/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="vendor/materialize/js/materialize.min.js"></script>
     <script src="src/js/main.js"></script>
-  </body>
+</body>
+
 </html>
