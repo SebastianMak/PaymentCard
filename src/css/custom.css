@@ -1,10 +1,12 @@
-html, body{
-  margin: 0 auto;
-  background-color: #fcfcfc
+html, body {
+    margin: 0 auto;
+    background-color: #fcfcfc
 }
-.color{
-  background-color: #009687;
+
+.color {
+    background-color: #009687;
 }
+
 .select-dropdown li img {
     width: auto;
 }
@@ -24,31 +26,52 @@ html, body{
 }
 
 .slash {
-  margin-top: 14px;
-  line-height: 3rem;
-  font-size: 1.5rem;
+    margin-top: 14px;
+    line-height: 3rem;
+    font-size: 1.5rem;
 }
+
 .collapse-margin {
-      margin-bottom: 0;
+    margin-bottom: 0;
 }
-h1{
-  font-size: 40px
+
+h1 {
+    font-size: 40px
 }
-h2{
-  font-size: 30px;
+
+h2 {
+    font-size: 30px;
 }
-.custom-error,
-.custom-succes{
-  display: none;
-  margin-top: -20px;
-  color: #f44336;
+
+.custom-error, .custom-succes {
+    display: none;
+    margin-top: -20px;
+    color: #f44336;
+    font-size: 13.5px
 }
-.custom-succes{
-  color: #4caf50
+
+.custom-succes {
+    color: #4caf50
 }
-.invalid + .validation-messages .custom-error {
-  display: block;
+
+.invalid~.validation-messages .custom-error {
+    display: block;
 }
-.valid + .validation-messages .custom-succes{
-  display: block;
+
+.valid~.validation-messages .custom-succes {
+    display: block;
+}
+
+
+#maestro{
+    background: url("../../images/maestro.png") no-repeat right center;
+}
+#visa{
+    background: url("../../images/visa.png") no-repeat right center;
+}
+#discover{
+    background: url("../../images/discover.png") no-repeat right center;
+}
+#master-card{
+    background: url("../../images/mastercard.png") no-repeat right center;
 }

@@ -29,7 +29,7 @@
                     <div class="col s12 m12 l6">
                         <h2>User Info</h2>
                         <div class="input-field col s12">
-                            <input id="first_name" type="text" class="validate" name="first_name"/>
+                            <input id="first_name" type="text" name="first_name"/>
                             <div class="validation-messages">
                               <div class="custom-error"> Error </div>
                               <div class="custom-succes">Succes</div>
@@ -37,11 +37,19 @@
                             <label for="first_name" >First Name</label>
                         </div>
                         <div class="input-field col s12">
-                            <input id="last_name" type="text" class="validate" />
+                            <input id="last_name" type="text" name="last_name"/>
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
                             <label for="last_name">Last Name</label>
                         </div>
                         <div class="input-field col s12">
-                            <input id="email_name" type="text" class="validate" />
+                            <input id="email_name" type="text" name="email_adress"/>
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
                             <label for="email_name">Email adress</label>
                         </div>
 
@@ -49,27 +57,39 @@
                     <div class="col s12 m12 l6 right-border">
                         <h2>Card Details</h2>
                         <div class="input-field col s12">
-                            <input id="cardholder_name" type="text" class="validate">
+                            <input id="cardholder_name" type="text" name="cardholder_name">
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
                             <label for="cardholder_name">Cardholder's Name</label>
                         </div>
                         <div class="input-field col s12">
-                            <select class="icons">
-                              <option value="" disabled selected>Select your card</option>
-                              <option value="" data-icon="images/maestro.png" class="right">Maestro</option>
-                              <option value="" data-icon="images/visa.png" class="right">Visa</option>
-                              <option value="" data-icon="images/paypa.png" class="right">PayPal</option>
-                              <option value="" data-icon="images/mastercard.png" class="right">Master Card</option>
+                            <select class="icons" name="card_type">
+                              <option value=""disabled selected>Select your card</option>
+                              <option value="maestro" data-icon="images/maestro.png" class="right">Maestro</option>
+                              <option value="visa" data-icon="images/visa.png" class="right">Visa</option>
+                              <option value="discover" data-icon="images/discover.png" class="right">Discover</option>
+                              <option value="master-card" data-icon="images/mastercard.png" class="right">Master Card</option>
                             </select>
                             <label>Card type</label>
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
                         </div>
                         <div class="input-field col s12">
-                            <input id="cardNumber_name" type="text" class="validate">
-                            <label for="cardNumber_name">Card Number</label>
+                            <input  name="card_number" type="text">
+                            <div class="validation-messages">
+                              <div class="custom-error"> Error </div>
+                              <div class="custom-succes">Succes</div>
+                            </div>
+                            <label for="card_number">Card Number</label>
                         </div>
                         <div class="col s12 card-type">
                             <div class="col s12 m8 card-type">
                                 <div class="input-field col s5">
-                                    <select>
+                                    <select name="select_month">
                                       <option value="" disabled selected>MM</option>
                                       <option value="January">01</option>
                                       <option value="February">02</option>
@@ -85,13 +105,17 @@
                                       <option value="December">12</option>
                                     </select>
                                     <label>Expiration date:</label>
+                                    <div class="validation-messages">
+                                      <div class="custom-error"> Error </div>
+                                      <div class="custom-succes">Succes</div>
+                                    </div>
                                 </div>
                                 <div class="col s2 center slash">
                                   /
                                 </div>
                                 <div class="input-field col s5 card-type">
-                                    <select>
-                                      <option value="" disabled selected>YYY</option>
+                                    <select name="select_year">
+                                      <option value="" disabled selected>YYYY</option>
                                       <option value="2016">2016</option>
                                       <option value="2017">2017</option>
                                       <option value="2018">2018</option>
@@ -99,10 +123,18 @@
                                       <option value="2020">2020</option>
                                     </select>
                                     <label></label>
+                                    <div class="validation-messages">
+                                      <div class="custom-error"> Error </div>
+                                      <div class="custom-succes">Succes</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="input-field col s12 m4">
-                                <input id="cardNumber_name" type="text" class="validate">
+                                <input id="cardNumber_name" name="ccv_code" type="text">
+                                <div class="validation-messages">
+                                  <div class="custom-error"> Error </div>
+                                  <div class="custom-succes">Succes</div>
+                                </div>
                                 <label for="cardNumber_name">CCV code</label>
                             </div>
                         </div>
@@ -114,10 +146,8 @@
                         <label for="test1">Subscribe to our newsletter</label>
                     </div>
                     <div class="buttons-display col s12 m12 l6">
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Reset
-                              <i class="material-icons right"></i>
-                            </button>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <button class="waves-effect waves-light btn disabled reset" disabled="">Reset</button>
+                            <button class="btn waves-effect waves-light disabled submitbtn" disabled type="submit" name="action">Submit
                               <i class="material-icons right">send</i>
                             </button>
                     </div>
