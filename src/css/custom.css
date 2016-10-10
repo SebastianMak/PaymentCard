@@ -62,16 +62,18 @@ h2 {
     display: block;
 }
 
-
-#maestro{
+#maestro {
     background: url("../../images/maestro.png") no-repeat right center;
 }
-#visa{
+
+#visa {
     background: url("../../images/visa.png") no-repeat right center;
 }
-#discover{
+
+#discover {
     background: url("../../images/discover.png") no-repeat right center;
 }
-#master-card{
+
+#master-card {
     background: url("../../images/mastercard.png") no-repeat right center;
 }
